@@ -1,0 +1,98 @@
+body {
+  background-image: url(../Images/tanjiro\ and\ rengoku.jpg);
+  /* thay đổi kích thước chiều rộng hoặc chiều cao của background
+   bằng cách sử dụng thuộc tính background-size */
+  background-size: cover;
+  background-position-y: -100px;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#header {
+  background-color: #131921;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+#logo {
+  padding: 5px 0px;
+}
+#logo img {
+  max-width: 50px;
+  height: auto;
+}
+#mainmenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#mainmenu li {
+  position: relative;
+}
+#mainmenu li a {
+  color: #f8f8f8;
+  display: block;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+#mainmenu ul.sub-menu {
+  position: absolute;
+  top: 62.4px;
+  background-color: #131921;
+  padding: 15px 0px;
+  width: 200px;
+  border: 1px solid #454545;
+  display: none;
+}
+#mainmenu li:hover > ul.sub-menu {
+  display: block;
+}
+/* Tác động tất cả thẻ a nằm trong ul có class là sub-menu và nó là con của mainmenu */
+#mainmenu ul.sub-menu a {
+  padding: 8px 15px;
+  border-bottom: 1px solid #454545;
+  left: 0px;
+}
+#mainmenu ul.sub-menu li:hover > a {
+  border-bottom: 1px solid goldenrod;
+}
+#mainmenu ul.sub-menu li:last-child a {
+  border: none;
+}
+#mainmenu ul.sub-menu ul.sub-menu {
+  left: 200px;
+  top: -16px;
+}
+/* Thiết lập  border khi hover */
+#mainmenu > li > a {
+  position: relative;
+}
+#mainmenu > li > a::before {
+  content: "";
+  height: 4px;
+  width: 0px;
+  background-color: red;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#mainmenu > li:hover > a::before {
+  display: block;
+  width: 100%;
+}
+#mainmenu > li.has-child::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 18px 0px;
+}
+/* font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007"; */
