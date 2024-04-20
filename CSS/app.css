@@ -1,16 +1,9 @@
-body {
-  background-image: url(../Images/tanjiro\ and\ rengoku.jpg);
-  /* thay đổi kích thước chiều rộng hoặc chiều cao của background
-   bằng cách sử dụng thuộc tính background-size */
-  background-size: cover;
-  background-position-y: -100px;
-}
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 #header {
-  background-color: #131921;
+  background-color: white;
 }
 nav {
   display: flex;
@@ -34,7 +27,7 @@ nav {
   position: relative;
 }
 #mainmenu li a {
-  color: #f8f8f8;
+  color: #131921;
   display: block;
   padding: 18px 20px;
   text-decoration: none;
@@ -42,7 +35,7 @@ nav {
 #mainmenu ul.sub-menu {
   position: absolute;
   top: 62.4px;
-  background-color: #131921;
+  background-color: white;
   padding: 15px 0px;
   width: 200px;
   border: 1px solid #454545;
@@ -77,7 +70,7 @@ nav {
   width: 0px;
   background-color: red;
   position: absolute;
-  bottom: -10px;
+  bottom: -4px;
   left: 0px;
   transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
